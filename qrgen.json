@@ -26,10 +26,13 @@
     "title": "QR Codes Generator",
     "description": "Create QR codes."
   },
-  "settings": {},
+  "settings": {
+    "type": "object",
+    "properties": {}
+  },
   "ui": {
-    "url": "https://chatgpt-qrcode-46d7d4ebefc8.herokuapp.com/index.js",
-    "mode": "module"
+    "url": "https://chatgpt-qrcode-46d7d4ebefc8.herokuapp.com/logo.png",
+    "mode": "iframe"
   },
   "version": "1"
 }
