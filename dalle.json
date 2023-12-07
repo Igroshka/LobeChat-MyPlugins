@@ -1,13 +1,15 @@
 {
-  "author": "your name or org name",
-  "homepage": "https://github.com/OWNER/REPO",
-  "identifier": "plugin-template # same as your filename",
-  "locale": "zh-CN # you can set locale if you use other i18n language, default is en-US",
-  "manifest": "https://url.to/manifest.json",
+  "author": "LobeHub",
+  "createAt": "2023-08-17",
+  "createdAt": "2023-08-17",
+  "homepage": "https://github.com/lobehub/chat-plugin-web-crawler",
+  "identifier": "website-crawler",
+  "manifest": "https://web-crawler.chat-plugin.lobehub.com/manifest.json",
   "meta": {
-    "avatar": "☂️ emoji or logo url",
-    "tags": ["tag1", "tag2", "# will auto generate i18n in workflow"],
-    "title": "plugin en-US title # will auto generate i18n in workflow",
-    "description": "plugin en-US description # will auto generate i18n in workflow"
-  }
+    "avatar": "🕸",
+    "tags": ["web", "content-crawler"],
+    "title": "Website Crawler",
+    "description": "Extract content from web links"
+  },
+  "schemaVersion": 1
 }
