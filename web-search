@@ -1,0 +1,39 @@
+{
+  "api": [
+    {
+      "name": "query",
+      "url": "https://websearch.plugsugar.com/api/openapi_yaml",
+      "description": "Search for information from the internet",
+      "parameters": {
+        "properties": {
+          "query": {
+            "description": "The text content to search",
+            "type": "string"
+          }
+        },
+        "required": ["query"],
+        "type": "object"
+      }
+    }
+  ],
+  "author": "support@plugsugar.com",
+  "createAt": "2023-08-15",
+  "homepage": "https://websearch.plugsugar.com/contact",
+  "identifier": "web_search",
+  "meta": {
+    "avatar": "https://websearch.plugsugar.com/200x200.png",
+    "tags": ["web", "search"],
+    "title": "Web Search",
+    "description": "Search for information from the internet"
+  },
+  "settings": {
+    "type": "object",
+    "required": [],
+    "properties": {}
+  },
+  "ui": {
+    "url": "https://websearch.plugsugar.com/dist/index.js",
+    "mode": "module"
+  },
+  "version": "1"
+}
