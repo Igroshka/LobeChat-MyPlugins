@@ -26,11 +26,6 @@
     "title": "Web Search",
     "description": "Search for information from the internet"
   },
-  "settings": {
-    "type": "object",
-    "required": [],
-    "properties": {}
-  },
   "ui": {
     "url": "https://websearch.plugsugar.com/dist/index.js",
     "mode": "module"
