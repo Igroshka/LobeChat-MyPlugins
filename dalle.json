@@ -1,20 +1,18 @@
 {
-  "schemaVersion": 1,
-  "plugins": [
-    {
-      "author": "getit.ai",
-      "createdAt": "2023-11-01",
-      "homepage": "https://github.com/getit-ai/chat-plugin-finder",
-      "identifier": "getit-ai-plugins-finder",
-      "manifest": "https://getit-ai-plugins-finder.chat-plugin.lobehub.com/manifest.json",
-      "meta": {
-        "avatar": "🔎",
-        "tags": ["plugins", "finder"],
-        "title": "Plugins Finder",
-        "description": "Find new plugins for you"
-      },
-      "schemaVersion": 1
-    }
-  ],
-  "tags": ["plugins", "finder"]
+  "schemaVersion": "v1",
+  "nameForHuman": "GetIt AI Plugins Finder",
+  "nameForModel": "getit_ai_plugins_finder",
+  "descriptionForHuman": "Finds new plugins for you",
+  "descriptionForModel": "Finds new plugins for you. You can search for plugins by category or by keyword.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://api.getit.ai/openapi.json",
+    "isUserAuthenticated": false
+  },
+  "logoUrl": "https://getit.ai/images/icon-logo-transparent.png",
+  "contactEmail": "info@getit.ai",
+  "legalInfoUrl": "https://www.getit.ai"
 }
