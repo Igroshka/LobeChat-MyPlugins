@@ -3,7 +3,7 @@
     {
       "name": "asciiArt",
       "url": "https://chatgpt-plugin-ts.transitive-bullshit.workers.dev/openapi.json",
-      "description": "Convert any text to ASCII art.",
+      "description": "Plugin for rendering text as ASCII art.",
       "parameters": {
         "properties": {
           "text": {
@@ -24,7 +24,7 @@
     "avatar": "🎨",
     "tags": ["text", "art", "ASCII"],
     "title": "ASCII Art",
-    "description": "Convert any text to ASCII art."
+    "description": "Plugin for rendering text as ASCII art."
   },
   "settings": {
     "type": "object",
@@ -33,7 +33,7 @@
   },
   "ui": {
     "url": "https://transitivebullsh.it/.well-known/logo.png",
-    "mode": "module"
+    "mode": "iframe"
   },
   "version": "1"
 }
