@@ -1,0 +1,39 @@
+{
+  "api": [
+    {
+      "name": "asciiArt",
+      "url": "https://chatgpt-plugin-ts.transitive-bullshit.workers.dev/openapi.json",
+      "description": "Convert any text to ASCII art.",
+      "parameters": {
+        "properties": {
+          "text": {
+            "description": "The text to be converted into ASCII art",
+            "type": "string"
+          }
+        },
+        "required": ["text"],
+        "type": "object"
+      }
+    }
+  ],
+  "author": "Travis Fischer",
+  "createAt": "2023-08-15",
+  "homepage": "https://transitivebullsh.it/about",
+  "identifier": "asciiArt0",
+  "meta": {
+    "avatar": "🎨",
+    "tags": ["text", "art", "ASCII"],
+    "title": "ASCII Art",
+    "description": "Convert any text to ASCII art."
+  },
+  "settings": {
+    "type": "object",
+    "required": [],
+    "properties": {}
+  },
+  "ui": {
+    "url": "https://transitivebullsh.it/.well-known/logo.png",
+    "mode": "image"
+  },
+  "version": "1"
+}
