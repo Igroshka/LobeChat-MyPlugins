@@ -1,0 +1,28 @@
+{
+  "api": [
+    {
+      "name": "qrCodes",
+      "url": "https://chatgpt-qrcode-46d7d4ebefc8.herokuapp.com/openapi.yaml",
+      "description": "Plugin for generating QR codes."
+    }
+  ],
+  "author": "Chris Mountzou",
+  "createAt": "2023-08-15",
+  "homepage": "https://github.com/mountzou/qrCodeGPTv1",
+  "identifier": "qr-codes",
+  "meta": {
+    "avatar": "🔗",
+    "tags": ["qr", "code", "generator"],
+    "title": "QR Codes",
+    "description": "Create QR codes."
+  },
+  "settings": {
+    "type": "object",
+    "properties": {}
+  },
+  "ui": {
+    "url": "https://chatgpt-qrcode-46d7d4ebefc8.herokuapp.com/logo.png",
+    "mode": "image"
+  },
+  "version": "1"
+}
