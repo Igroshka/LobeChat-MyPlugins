@@ -34,7 +34,7 @@
         "title": "ScreenshotOne Verification Token",
         "description": "Verification token for ScreenshotOne [Learn more](https://screenshotone.com/)",
         "type": "string",
-        "minLength": 32,
+        "minLength": 1,
         "maxLength": 32,
         "format": "password"
       }
