@@ -2,26 +2,42 @@
   "$schema": "../node_modules/@lobehub/chat-plugin-sdk/schema.json",
   "api": [
     {
-      "name": "query",
+      "name": "getit_ai_plugins_finder",
       "url": "https://api.getit.ai/openapi.json",
-      "description": "Finds new plugins for you",
-      "parameters": {},
-      "is_user_authenticated": false
+      "description": "Finds new plugins for you. You can search for plugins by category or by keyword.",
+      "parameters": {
+        "properties": {
+          "category": {
+            "description": "Search for plugins by category",
+            "type": "string"
+          },
+          "keyword": {
+            "description": "Search for plugins by keyword",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      }
     }
   ],
-  "author": "LobeHub",
+  "author": "getit.ai",
   "createAt": "2023-08-15",
   "homepage": "https://www.getit.ai",
   "identifier": "getit_ai_plugins_finder",
   "meta": {
-    "avatar": "https://getit.ai/images/icon-logo-transparent.png",
-    "tags": [],
+    "avatar": "🔍",
+    "tags": ["plugin", "search", "finder"],
     "title": "getit.ai plugins finder",
     "description": "Finds new plugins for you. You can search for plugins by category or by keyword."
   },
-  "settings": {},
+  "settings": {
+    "type": "object",
+    "required": [],
+    "properties": {}
+  },
   "ui": {
-    "url": "",
+    "url": "https://getit.ai/images/icon-logo-transparent.png",
     "mode": "module"
   },
   "version": "1"
