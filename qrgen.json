@@ -5,14 +5,14 @@
       "url": "https://chatgpt-qrcode-46d7d4ebefc8.herokuapp.com/openapi.json",
       "description": "Generate QR codes.",
       "parameters": {
+        "type": "object",
         "properties": {
           "content": {
             "description": "The content to be encoded into the QR code.",
             "type": "string"
           }
         },
-        "required": ["content"],
-        "type": "object"
+        "required": ["content"]
       }
     }
   ],
@@ -26,13 +26,10 @@
     "title": "QR Codes Generator",
     "description": "Create QR codes."
   },
-  "settings": {
-    "type": "object",
-    "properties": {}
-  },
+  "settings": {},
   "ui": {
-    "url": "https://chatgpt-qrcode-46d7d4ebefc8.herokuapp.com/logo.png",
-    "mode": "image"
+    "url": "https://chatgpt-qrcode-46d7d4ebefc8.herokuapp.com/index.js",
+    "mode": "module"
   },
   "version": "1"
 }
