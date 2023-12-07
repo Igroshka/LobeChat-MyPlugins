@@ -1,63 +1,30 @@
 {
   "api": [
     {
-      "name": "get_ASCIIArtRender",
-      "url": "https://api.getit.ai/openapi.json/render",
-      "description": "Renders text as ASCII art. Output is a string that should be rendered a markdown code block. Do not specify a programming language for the code block; it is plain text.",
+      "name": "asciiArt0",
+      "url": "https://chatgpt-plugin-ts.transitive-bullshit.workers.dev/openapi.json",
+      "description": "Plugin for rendering text as ASCII art",
       "parameters": {
         "properties": {
-          "input": {
-            "description": "Input text to convert",
-            "type": "string",
-            "example": "boo"
-          },
-          "font": {
-            "description": "Which ASCII art font to render",
-            "type": "string",
-            "default": "Ghost",
-            "enum": [
-              "Standard",
-              "Ghost",
-              "3D Diagonal",
-              "Graffiti",
-              "Dancing Font",
-              "Big Money-ne",
-              "Big Money-nw",
-              "Big Money-se",
-              "Big Money-sw",
-              "Big",
-              "Bulbhead",
-              "Doom",
-              "Isometric1",
-              "Slant",
-              "Sub-Zero",
-              "ANSI Regular",
-              "ANSI Shadow",
-              "Bloody",
-              "Alligator",
-              "Alligator2",
-              "Ivrit",
-              "Larry 3D",
-              "NScript",
-              "Poison",
-              "Small Poison"
-            ]
+          "text": {
+            "description": "Text to convert to ASCII art",
+            "type": "string"
           }
         },
-        "required": ["input"],
+        "required": ["text"],
         "type": "object"
       }
     }
   ],
-  "author": "LobeHub",
+  "author": "transitivebullsh.it",
   "createAt": "2023-08-15",
-  "homepage": "https://github.com/lobehub/chat-plugin-ascii-art",
-  "identifier": "ascii-art",
+  "homepage": "https://transitivebullsh.it/about",
+  "identifier": "asciiArt0",
   "meta": {
-    "avatar": "🎨",
-    "tags": ["art", "ascii"],
-    "title": "ChatGPT ASCII Art Plugin",
-    "description": "Renders text as ASCII art."
+    "avatar": "https://transitivebullsh.it/.well-known/logo.png",
+    "tags": ["text", "ascii art"],
+    "title": "ASCII Art",
+    "description": "Convert any text to ASCII art."
   },
   "settings": {
     "type": "object",
@@ -65,7 +32,7 @@
     "properties": {}
   },
   "ui": {
-    "url": "https://ascii-art.chat-plugin.lobehub.com/dist/index.js",
+    "url": "https://chatgpt-plugin-ts.transitive-bullshit.workers.dev/index.js",
     "mode": "module"
   },
   "version": "1"
