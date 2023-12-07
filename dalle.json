@@ -1,31 +1,18 @@
 {
-  "name": "My Model",
-  "description": "This is my model",
-  "version": "1.0.0",
-  "inputs": [
-    {
-      "name": "image",
-      "type": "image",
-      "description": "Input image"
-    }
-  ],
-  "outputs": [
-    {
-      "name": "prediction",
-      "type": "classification",
-      "description": "Predicted class label"
-    }
-  ],
-  "commands": [
-    {
-      "name": "predict",
-      "description": "Make a prediction",
-      "input": {
-        "image": "image"
-      },
-      "output": {
-        "prediction": "prediction"
-      }
-    }
-  ]
+    "schema_version": "v1",
+    "name_for_human": "LobeHub Plugin Finder",
+    "name_for_model": "lobehub_plugin_finder",
+    "description_for_human": "Finds new plugins for LobeHub",
+    "description_for_model": "Finds new plugins for LobeHub. You can search for plugins by category or by keyword.",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "https://api.lobehub.com/openapi.json",
+        "is_user_authenticated": false
+    },
+    "logo_url": "https://lobehub.com/images/icon-logo-transparent.png",
+    "contact_email": "info@lobehub.com",
+    "legal_info_url": "https://www.lobehub.com"
 }
