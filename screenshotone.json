@@ -31,8 +31,8 @@
     "required": ["openai"],
     "properties": {
       "openai": {
-        "title": "OpenAI Verification Token",
-        "description": "Verification token for OpenAI [Learn more](https://screenshotone.com/)",
+        "title": "ScreenshotOne Verification Token",
+        "description": "Verification token for ScreenshotOne [Learn more](https://screenshotone.com/)",
         "type": "string",
         "minLength": 32,
         "maxLength": 32,
