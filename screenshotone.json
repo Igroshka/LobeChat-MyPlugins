@@ -1,0 +1,48 @@
+{
+  "api": [
+    {
+      "name": "query",
+      "url": "https://api.screenshotone.com/plugin/openapi.yml",
+      "description": "Take screenshots of any website or organization, render HTML, or Markdown as an image or PDF.",
+      "parameters": {
+        "properties": {
+          "query": {
+            "description": "URL or HTML for screenshot",
+            "type": "string"
+          }
+        },
+        "required": ["query"],
+        "type": "object"
+      }
+    }
+  ],
+  "author": "ScreenshotOne",
+  "createAt": "2023-08-15",
+  "homepage": "https://screenshotone.com/",
+  "identifier": "screenshots",
+  "meta": {
+    "avatar": "📸",
+    "tags": ["web", "screenshot"],
+    "title": "Screenshots by ScreenshotOne",
+    "description": "Take screenshots of any website or organization, render HTML, or Markdown as an image or PDF."
+  },
+  "settings": {
+    "type": "object",
+    "required": ["openai"],
+    "properties": {
+      "openai": {
+        "title": "OpenAI Verification Token",
+        "description": "Verification token for OpenAI [Learn more](https://screenshotone.com/)",
+        "type": "string",
+        "minLength": 32,
+        "maxLength": 32,
+        "format": "password"
+      }
+    }
+  },
+  "ui": {
+    "url": "https://screenshotone.com/logo.png",
+    "mode": "module"
+  },
+  "version": "1"
+}
