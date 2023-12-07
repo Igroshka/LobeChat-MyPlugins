@@ -33,7 +33,7 @@
   },
   "ui": {
     "url": "https://transitivebullsh.it/.well-known/logo.png",
-    "mode": "image"
+    "mode": "module"
   },
   "version": "1"
 }
