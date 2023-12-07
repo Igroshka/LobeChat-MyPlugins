@@ -1,13 +1,1 @@
-{
-  "author": "your name or org name",
-  "homepage": "https://github.com/OWNER/REPO",
-  "identifier": "plugin-template # same as your filename",
-  "locale": "zh-CN # you can set locale if you use other i18n language, default is en-US",
-  "manifest": "https://url.to/manifest.json",
-  "meta": {
-    "avatar": "☂️ emoji or logo url",
-    "tags": ["tag1", "tag2", "# will auto generate i18n in workflow"],
-    "title": "plugin en-US title # will auto generate i18n in workflow",
-    "description": "plugin en-US description # will auto generate i18n in workflow"
-  }
-}
+{ "code": "invalid_type", "expected": "array", "received": "object", "path": [ "api" ], "message": "Expected array, received object" }, { "code": "invalid_type", "expected": "string", "received": "undefined", "path": [ "identifier" ], "message": "Required" }, { "code": "invalid_type", "expected": "object", "received": "undefined", "path": [ "meta" ], "message": "Required" }
