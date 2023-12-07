@@ -34,7 +34,7 @@
         "title": "SerpAPI API Key",
         "description": "we use SerpAPI as backend service [Learn more](https://github.com/lobehub/chat-plugin-search-engine) | 该插件使用 SerpAPI 作为搜索服务",
         "type": "string",
-        "minLength": 64,
+        "minLength": 6,
         "maxLength": 64,
         "format": "password"
       }
