@@ -26,11 +26,6 @@
     "title": "ASCII Art",
     "description": "Convert any text to ASCII art"
   },
-  "settings": {
-    "type": "object",
-    "required": [],
-    "properties": {}
-  },
   "ui": {
     "url": "https://ascii-art.chat-plugin.lobehub.com/dist/index.js",
     "mode": "module"
