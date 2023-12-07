@@ -3,7 +3,7 @@
   "api": [
     {
       "name": "query",
-      "url": "https://search-engine.chat-plugin.lobehub.com/api/v1",
+      "url": "https://api.getit.ai/openapi.json",
       "description": "查询搜索引擎获取信息",
       "parameters": {
         "properties": {
@@ -24,7 +24,7 @@
   "meta": {
     "avatar": "🔍",
     "tags": ["web", "search"],
-    "title": "Search Engine",
+    "title": "getit.ai plugins finder",
     "description": "Query search engine to get information"
   },
   "settings": {
