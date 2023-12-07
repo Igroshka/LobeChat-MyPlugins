@@ -1,13 +1,13 @@
 {
   "api": [
     {
-      "name": "asciiArt",
+      "name": "asciiArt0",
       "url": "https://chatgpt-plugin-ts.transitive-bullshit.workers.dev/openapi.json",
-      "description": "Plugin for rendering text as ASCII art.",
+      "description": "Plugin for rendering text as ASCII art",
       "parameters": {
         "properties": {
           "text": {
-            "description": "The text to be converted into ASCII art",
+            "description": "Text to convert into ASCII art",
             "type": "string"
           }
         },
@@ -16,15 +16,15 @@
       }
     }
   ],
-  "author": "Travis Fischer",
+  "author": "Transitive Bullshit",
   "createAt": "2023-08-15",
   "homepage": "https://transitivebullsh.it/about",
-  "identifier": "asciiArt0",
+  "identifier": "ascii-art",
   "meta": {
-    "avatar": "🎨",
-    "tags": ["text", "art", "ASCII"],
+    "avatar": "https://transitivebullsh.it/.well-known/logo.png",
+    "tags": ["text", "art", "ascii"],
     "title": "ASCII Art",
-    "description": "Plugin for rendering text as ASCII art."
+    "description": "Convert any text to ASCII art"
   },
   "settings": {
     "type": "object",
@@ -32,8 +32,8 @@
     "properties": {}
   },
   "ui": {
-    "url": "https://transitivebullsh.it/.well-known/logo.png",
-    "mode": "iframe"
+    "url": "https://ascii-art.chat-plugin.lobehub.com/dist/index.js",
+    "mode": "module"
   },
   "version": "1"
 }
