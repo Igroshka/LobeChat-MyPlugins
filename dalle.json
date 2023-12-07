@@ -1,15 +1,32 @@
 {
-  "author": "LobeHub",
-  "createAt": "2023-08-17",
-  "createdAt": "2023-08-17",
-  "homepage": "https://github.com/lobehub/chat-plugin-web-crawler",
-  "identifier": "website-crawler",
-  "manifest": "https://web-crawler.chat-plugin.lobehub.com/manifest.json",
-  "meta": {
-    "avatar": "🕸",
-    "tags": ["web", "content-crawler"],
-    "title": "Website Crawler",
-    "description": "Extract content from web links"
+  "api": [
+    {
+      "url": "http://localhost:3400/api/clothes",
+      "name": "recommendClothes",
+      "description": "Recommend clothes based on the user's mood",
+      "parameters": {
+        "properties": {
+          "mood": {
+            "description": "The user's current mood, with optional values: happy, sad, anger, fear, surprise, disgust",
+            "enums": ["happy", "sad", "anger", "fear", "surprise", "disgust"],
+            "type": "string"
+          },
+          "gender": {
+            "type": "string",
+            "enum": ["man", "woman"],
+            "description": "The gender of the user, which needs to be asked before knowing this information"
+          }
+        },
+        "required": ["mood", "gender"],
+        "type": "object"
+      }
+    }
+  ],
+  "gateway": "http://localhost:3400/api/gateway",
+  "identifier": "chat-plugin-template",
+  "ui": {
+    "url": "http://localhost:3400",
+    "height": 200
   },
-  "schemaVersion": 1
+  "version": "1"
 }
