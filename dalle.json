@@ -1,32 +1,31 @@
 {
-  "api": [
+  "name": "My Model",
+  "description": "This is my model",
+  "version": "1.0.0",
+  "inputs": [
     {
-      "url": "http://localhost:3400/api/clothes",
-      "name": "recommendClothes",
-      "description": "Recommend clothes based on the user's mood",
-      "parameters": {
-        "properties": {
-          "mood": {
-            "description": "The user's current mood, with optional values: happy, sad, anger, fear, surprise, disgust",
-            "enums": ["happy", "sad", "anger", "fear", "surprise", "disgust"],
-            "type": "string"
-          },
-          "gender": {
-            "type": "string",
-            "enum": ["man", "woman"],
-            "description": "The gender of the user, which needs to be asked before knowing this information"
-          }
-        },
-        "required": ["mood", "gender"],
-        "type": "object"
-      }
+      "name": "image",
+      "type": "image",
+      "description": "Input image"
     }
   ],
-  "gateway": "http://localhost:3400/api/gateway",
-  "identifier": "chat-plugin-template",
-  "ui": {
-    "url": "http://localhost:3400",
-    "height": 200
-  },
-  "version": "1"
+  "outputs": [
+    {
+      "name": "prediction",
+      "type": "classification",
+      "description": "Predicted class label"
+    }
+  ],
+  "commands": [
+    {
+      "name": "predict",
+      "description": "Make a prediction",
+      "input": {
+        "image": "image"
+      },
+      "output": {
+        "prediction": "prediction"
+      }
+    }
+  ]
 }
