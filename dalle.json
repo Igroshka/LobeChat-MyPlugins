@@ -1,18 +1,13 @@
 {
-    "schema_version": "v1",
-    "name_for_human": "LobeHub Plugin Finder",
-    "name_for_model": "lobehub_plugin_finder",
-    "description_for_human": "Finds new plugins for LobeHub",
-    "description_for_model": "Finds new plugins for LobeHub. You can search for plugins by category or by keyword.",
-    "auth": {
-        "type": "none"
-    },
-    "api": {
-        "type": "openapi",
-        "url": "https://api.lobehub.com/openapi.json",
-        "is_user_authenticated": false
-    },
-    "logo_url": "https://lobehub.com/images/icon-logo-transparent.png",
-    "contact_email": "info@lobehub.com",
-    "legal_info_url": "https://www.lobehub.com"
+  "author": "your name or org name",
+  "homepage": "https://github.com/OWNER/REPO",
+  "identifier": "plugin-template # same as your filename",
+  "locale": "zh-CN # you can set locale if you use other i18n language, default is en-US",
+  "manifest": "https://url.to/manifest.json",
+  "meta": {
+    "avatar": "☂️ emoji or logo url",
+    "tags": ["tag1", "tag2", "# will auto generate i18n in workflow"],
+    "title": "plugin en-US title # will auto generate i18n in workflow",
+    "description": "plugin en-US description # will auto generate i18n in workflow"
+  }
 }
