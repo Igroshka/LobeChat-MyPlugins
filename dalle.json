@@ -1,5 +1,4 @@
 {
-  "$schema": "../node_modules/@lobehub/chat-plugin-sdk/schema.json",
   "api": [
     {
       "name": "getit_ai_plugins_finder",
