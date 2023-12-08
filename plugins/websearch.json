@@ -1,27 +1,26 @@
 {
   "api": [
     {
-      "name": "queryUsersKnowledgeBase",
+      "name": "internetSearch_KeyMate_Search",
       "url": "https://searchweb.keymate.ai/.well-known/pluginlab/openapi.json",
-      "description": "Retrieve data from the user's personal knowledge base",
+      "description": "Let KeyMate.AI Search & Browse the web with official Google Search API and read PDFs loaded in personal knowledge base.",
       "parameters": {
-        "properties": {},
-        "required": [],
-        "type": "object"
-      }
-    },
-    {
-      "name": "upsertToUsersKnowledgeBase",
-      "url": "https://searchweb.keymate.ai/.well-known/pluginlab/openapi.json",
-      "description": "Save data to the user's personal knowledge base",
-      "parameters": {
-        "properties": {},
-        "required": [],
+        "properties": {
+          "query": {
+            "description": "The search query to find information on the internet or user's personal knowledge base",
+            "type": "string"
+          },
+          "operation": {
+            "description": "The specific operation to perform, such as 'queryUsersKnowledgeBase' or 'upsertToUsersKnowledgeBase'",
+            "type": "string"
+          }
+        },
+        "required": ["query", "operation"],
         "type": "object"
       }
     }
   ],
-  "author": "Keymate.AI",
+  "author": "KeyMate.AI",
   "createAt": "2023-08-15",
   "homepage": "https://www.keymate.ai",
   "identifier": "internetSearch_KeyMate_Search",
@@ -29,7 +28,7 @@
     "avatar": "🔍",
     "tags": ["search", "knowledge base", "pdf", "google search"],
     "title": "/Keymate.AI Search",
-    "description": "Search the web with Google Search API, browse and read PDFs in a personal knowledge base."
+    "description": "Let KeyMate.AI Search & Browse the web with official Google Search API and read PDFs loaded in personal knowledge base."
   },
   "settings": {
     "type": "object",
