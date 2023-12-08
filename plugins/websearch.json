@@ -1,0 +1,77 @@
+{
+  "api": [
+    {
+      "name": "queryUsersKnowledgeBase",
+      "url": "https://searchweb.keymate.ai/.well-known/pluginlab/openapi.json",
+      "description": "Retrieve data from the user's personal knowledge base",
+      "parameters": {
+        "properties": {},
+        "required": [],
+        "type": "object"
+      }
+    },
+    {
+      "name": "upsertToUsersKnowledgeBase",
+      "url": "https://searchweb.keymate.ai/.well-known/pluginlab/openapi.json",
+      "description": "Save data to the user's personal knowledge base",
+      "parameters": {
+        "properties": {},
+        "required": [],
+        "type": "object"
+      }
+    }
+  ],
+  "author": "Keymate.AI",
+  "createAt": "2023-08-15",
+  "homepage": "https://www.keymate.ai",
+  "identifier": "internetSearch_KeyMate_Search",
+  "meta": {
+    "avatar": "🔍",
+    "tags": ["search", "knowledge base", "pdf", "google search"],
+    "title": "/Keymate.AI Search",
+    "description": "Search the web with Google Search API, browse and read PDFs in a personal knowledge base."
+  },
+  "settings": {
+    "type": "object",
+    "required": ["authorization"],
+    "properties": {
+      "authorization": {
+        "title": "Authorization",
+        "description": "OAuth authorization to access KeyMate.AI services",
+        "type": "object",
+        "properties": {
+          "authorization_content_type": {
+            "type": "string",
+            "default": "application/json"
+          },
+          "authorization_url": {
+            "type": "string",
+            "default": "https://auth.pluginlab.ai/oauth/token"
+          },
+          "client_url": {
+            "type": "string",
+            "default": "https://my.keymate.ai/oauth/authorize"
+          },
+          "scope": {
+            "type": "string",
+            "default": "all"
+          },
+          "verification_tokens": {
+            "type": "object",
+            "properties": {
+              "openai": {
+                "type": "string",
+                "default": "f0bbae1a7603475c957234aaec1a6847"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "ui": {
+    "url": "https://server.searchweb.keymate.ai/.well-known/icon.png",
+    "mode": "image"
+  },
+  "version": "1"
+}
